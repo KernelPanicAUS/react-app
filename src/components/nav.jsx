@@ -1,20 +1,19 @@
-import './App.css';
-
+/** @format */
 import React, { Component } from 'react';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink } from 'reactstrap';
 
-class App extends Component {
+class Navigation extends Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
     };
   }
 
   toggle() {
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      dropdownOpen: !this.state.dropdownOpen,
     });
   }
   render() {
@@ -55,4 +54,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Navigation;
